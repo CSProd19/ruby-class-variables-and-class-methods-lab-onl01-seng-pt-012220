@@ -26,10 +26,12 @@ class Song
     new_hash = {}
     @@genres.each do |g|
       if new_hash[g]
-        
+        new_hash[g] += 1 
       else
+        new_hash[g] = 1 
       end 
     end 
+    new_hash 
   end 
 end 
 
